@@ -1,5 +1,5 @@
 # Inbox Project
-This is a solidity introduction project to create a simple contract inbox which is deployed on Spolia testnet.
+This is a solidity introduction project to create a simple contract inbox which is deployed on Spolia testnet. The contract has 1 constructor to get the message and 1 method setMessage to update the message.
 
 ## Usage
 **Run on Remix.io**: Just copy the Inbox.sol in contracts folder and paste the code to remix.io to quickly test this project.
