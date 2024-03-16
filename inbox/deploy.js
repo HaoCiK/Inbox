@@ -1,10 +1,14 @@
+require('dotenv').config();
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 const { Web3 } = require('web3');
 const { interface, bytecode } = require('./compile');
-require('dotenv').config();
+
+const mneumonic = process.env.mneumonic;
+const testnet_api = process.env.testnet_api;
+
 const provider = new HDWalletProvider(
-    process.env.mneumonic,
-    'https://sepolia.infura.io/v3/9f8e49ca1af445e1acbf5f4d79af8419'
+    mneumonic,
+    testnet_api
 );
 const web3 = new Web3(provider);
 //updated web3 and hdwallet-provider imports added for convenience
